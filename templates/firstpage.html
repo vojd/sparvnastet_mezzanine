@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
 {% load i18n blog_tags mezzanine_tags pages_tags sparrow_tags %}
 {% block main %}
-
-    <div id="firstpage-padded">
-
 	{% blog_recent_posts 5 as recent_posts %}
 	{% if recent_posts %}
 
@@ -23,8 +20,6 @@
 			</div>
 		{% endfor %}
 	{% endif %}
-
-	</div>
 {% endblock %}
 
 {% block right_panel %}

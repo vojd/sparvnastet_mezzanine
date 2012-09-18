@@ -25,6 +25,10 @@ h1,h2,h3,h4 {
     width: 300px;
     float: left;
 }
+.middle{
+    background: #fff;
+    padding: 0px;
+}
 /**
 ** Overriding bootstrap.responsive.css
 **/
@@ -40,11 +44,14 @@ h1,h2,h3,h4 {
 .span7{
     background: #fff;
 }
-
+#middle-content{
+    padding: 32px;
+}
+/*
 #firstpage-padded{
     padding:  16px;
 }
-
+*/
 
 #content{
     max-width: 940px;

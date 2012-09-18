@@ -65,34 +65,28 @@ $(function() {
 
     {% for message in messages %}
     <div class="alert alert-{{ message.tags }}" data-alert="alert">
-    <a class="close" href="#" onclick="$(this).parent().fadeOut('fast'); return false;">×</a>{{ message }}
+    	<a class="close" href="#" onclick="$(this).parent().fadeOut('fast'); return false;">×</a>{{ message }}
     </div>
     {% endfor %}
 
     <h1>{% block title %}{% endblock %}</h1>
-
-    {% comment %}
-    <ul class="breadcrumb">
-    {% spaceless %}
-    {% block breadcrumb_menu %}{% page_menu "pages/menus/breadcrumb.html" %}{% endblock %}
-    {% endspaceless %}
-    </ul>
-    {% endcomment %}
-
 </div>
 
 <div class="container">
     <div class="row">
         <div class="page-content">
+		{% comment %}
             <div class="span2 left">
                 <div class="panel">
                     <a href="http://sparvnastet.org"><img src="/static/img/sparrow_01.png" border="0" /></a>
                 </div>
                 {# <div class="panel">{% page_menu "pages/menus/tree.html" %}</div> #}
             </div>
-
-            <div class="span7 middle">
-                {% block main %}{% endblock %}
+		{% endcomment %}
+            <div class="span9 middle">
+				<div id="middle-content">
+                	{% block main %}{% endblock %}
+				</div>
             </div>
             <div class="span3 right">
                 {% include "includes/user_panel.html" %}
