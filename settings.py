@@ -2,7 +2,6 @@
 ######################
 # MEZZANINE SETTINGS #
 ######################
-
 # The following settings are already defined in mezzanine.conf.defaults
 # with default values, but are common enough to be put here, commented
 # out, for convenient overriding.
@@ -65,9 +64,9 @@ BLOG_USE_FEATURED_IMAGE = True
 # links in templates/includes/user_panel.html. Defaults to False.
 #
 # ACCOUNTS_ENABLED = True
-USE_REDACTOR = False
-if USE_REDACTOR:
-    RICHTEXT_WIDGET_CLASS = "django.forms.Textarea"
+#USE_REDACTOR = False
+#if USE_REDACTOR:
+#    RICHTEXT_WIDGET_CLASS = "django.forms.Textarea"
 
 # If ``True``, users will be automatically redirected to HTTPS
 # for the URLs specified by the ``SSL_FORCE_URL_PREFIXES`` setting.

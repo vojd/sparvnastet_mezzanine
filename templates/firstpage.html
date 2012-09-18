@@ -12,12 +12,10 @@
 				{{ blog_post.content|safe }}
 				{% endeditable %}
 			</div>
-
-			<div class="comments">
-			</div>
-
-			<div class="share">
-			</div>
+			{% comment %}
+			<div class="comments"></div>
+			<div class="share"></div>
+			{% endcomment %}
 		{% endfor %}
 	{% endif %}
 {% endblock %}

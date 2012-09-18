@@ -1,0 +1,24 @@
+{% extends 'admin/base.html' %}
+{% block extrastyle %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{ STATIC_URL }}admin/css/bootstrap-wysihtml5.css" type="text/css" media="screen"/>
+{% endblock %}
+
+{% block extrahead %}
+	<script src="{{ STATIC_URL }}admin/js/wysihtml5-0.3.0.min.js"></script>
+{% comment %}
+	<script src="{{ STATIC_URL }}js/jquery-1.7.2.min.js"></script>
+	<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+	<script src="{{ STATIC_URL }}js/bootstrap-wysihtml5.js"></script>
+{% endcomment %}
+<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}admin/js/bootstrap-wysihtml5.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('textarea').css({'width' : '100%'});
+	$('textarea').wysihtml5();
+});
+</script>
+
+{% endblock %}
